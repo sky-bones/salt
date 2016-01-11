@@ -243,9 +243,7 @@ h1 {
 	transition: all 280ms ease-out;
 }
 
-.js-panel-expand {
-	max-height: 200em;
-}
+
 
 .two-illustration {
 	width: 200px;
@@ -272,7 +270,7 @@ h1 {
 .st4 {
 	fill:#FFFFFF;}
 
-.js-panel-expand #star-4 {
+ #star-4 {
 	-webkit-animation: twinkle-vone 5s ease alternate infinite;
 	animation: twinkle-vone 5s ease alternate infinite;
 }
@@ -289,7 +287,7 @@ h1 {
 	100% { opacity: 0; }
 }
 
-.js-panel-expand #star-3 {
+ #star-3 {
 	-webkit-animation: twinkle-vtwo 10s ease alternate infinite;
 	animation: twinkle-vtwo 10s ease alternate infinite;
 }
