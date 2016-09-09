@@ -1,0 +1,602 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+/* line 9, ../../sass/components/main.scss */
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* line 18, ../../sass/components/main.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 22, ../../sass/components/main.scss */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* accessibility */
+/* line 29, ../../sass/components/main.scss */
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  z-index: 1003;
+  font-size: 1em;
+  padding: 10px;
+}
+
+/* line 37, ../../sass/components/main.scss */
+.skip-links a:focus {
+  top: 0;
+}
+
+/* line 41, ../../sass/components/main.scss */
+a:focus {
+  background-color: #000;
+  outline: 3px solid #fff;
+}
+
+/* main css */
+/* line 47, ../../sass/components/main.scss */
+body {
+  margin: 0;
+  background-color: #1a1a1a;
+}
+
+/* line 53, ../../sass/components/main.scss */
+.crystal-background {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 60, ../../sass/components/main.scss */
+.crystals {
+  position: relative;
+  z-index: 1000;
+}
+
+/* line 65, ../../sass/components/main.scss */
+.nav {
+  overflow: hidden;
+}
+
+/* line 69, ../../sass/components/main.scss */
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #e6e6e6;
+  cursor: pointer;
+}
+
+/* line 76, ../../sass/components/main.scss */
+li {
+  text-align: center;
+  list-style-type: none;
+}
+
+/* line 81, ../../sass/components/main.scss */
+.hamburger {
+  position: absolute;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  right: 10px;
+  z-index: 1002;
+  cursor: pointer;
+}
+
+/* line 91, ../../sass/components/main.scss */
+.js-panel-down {
+  max-height: 3.5em;
+}
+
+/* line 95, ../../sass/components/main.scss */
+.nav-menu {
+  padding: .25rem;
+  width: 4em;
+}
+
+/* line 100, ../../sass/components/main.scss */
+.title {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: calc(50% - 107px);
+  width: 215px;
+  font-size: 4em;
+  color: white;
+  top: 0;
+  z-index: 1001;
+  text-align: center;
+}
+
+/*  header */
+/* line 114, ../../sass/components/main.scss */
+h1:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  text-shadow: 0 0 4px #FFFFFF;
+  color: rgba(255, 255, 255, 0);
+  transition: all 3s ease;
+}
+
+/* line 122, ../../sass/components/main.scss */
+h1 {
+  transition: all 2s ease-out;
+}
+
+/* line 126, ../../sass/components/main.scss */
+.drop-1 {
+  /* mobile */
+  position: absolute;
+  margin: 0;
+  height: 30px;
+  width: 40px;
+  left: 65px;
+  top: 2px;
+  -webkit-animation: drop-again 10s ease-in infinite;
+  animation: drop-again 10s ease-in infinite;
+}
+
+/* line 137, ../../sass/components/main.scss */
+.drop-2 {
+  position: absolute;
+  margin: 0;
+  height: 30px;
+  width: 40px;
+  left: 120px;
+  top: 20px;
+  -webkit-animation: drop-again 8s ease-in infinite;
+  animation: drop-again 8s ease-in infinite;
+}
+
+/* line 148, ../../sass/components/main.scss */
+.drop-3 {
+  position: absolute;
+  margin: 0;
+  height: 30px;
+  width: 40px;
+  left: 250px;
+  top: 50px;
+  -webkit-animation: drop-again 6s ease-in infinite;
+  animation: drop-again 6s ease-in infinite;
+}
+
+@-webkit-keyframes drop-again {
+  /* mobile */
+  0% {
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    opacity: 0;
+  }
+}
+@keyframes drop-again {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+/* line 172, ../../sass/components/main.scss */
+.text {
+  color: #e6e6e6;
+}
+
+/* line 176, ../../sass/components/main.scss */
+.sections {
+  text-align: center;
+  width: 220px;
+  height: 70px;
+}
+
+/* line 182, ../../sass/components/main.scss */
+.panel {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 190, ../../sass/components/main.scss */
+.story {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 198, ../../sass/components/main.scss */
+.story-2 {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 206, ../../sass/components/main.scss */
+.story-3 {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 214, ../../sass/components/main.scss */
+.story-4 {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 222, ../../sass/components/main.scss */
+.story-5 {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 230, ../../sass/components/main.scss */
+.story-6 {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 238, ../../sass/components/main.scss */
+.story-7 {
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 280ms ease-out;
+}
+
+/* line 248, ../../sass/components/main.scss */
+.two-illustration {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 255, ../../sass/components/main.scss */
+.st0 {
+  fill: #027F80;
+}
+
+/* line 258, ../../sass/components/main.scss */
+.st1 {
+  fill: #5AC6D1;
+}
+
+/* line 262, ../../sass/components/main.scss */
+.st2 {
+  fill: #064040;
+}
+
+/* line 266, ../../sass/components/main.scss */
+.st3 {
+  fill: #000;
+}
+
+/* line 270, ../../sass/components/main.scss */
+.st4 {
+  fill: #FFFFFF;
+}
+
+/* line 273, ../../sass/components/main.scss */
+#star-4 {
+  -webkit-animation: twinkle-vone 4s ease alternate infinite;
+  animation: twinkle-vone 4s ease alternate infinite;
+}
+
+/* line 278, ../../sass/components/main.scss */
+#star-3 {
+  -webkit-animation: twinkle-vone 5s ease alternate infinite;
+  animation: twinkle-vone 5s ease alternate infinite;
+}
+
+/* line 283, ../../sass/components/main.scss */
+#star-2 {
+  -webkit-animation: twinkle-vone 6s ease alternate infinite;
+  animation: twinkle-vone 6s ease alternate infinite;
+}
+
+/* line 288, ../../sass/components/main.scss */
+#star-1 {
+  -webkit-animation: twinkle-vone 3s ease alternate infinite;
+  animation: twinkle-vone 3s ease alternate infinite;
+}
+
+@-webkit-keyframes twinkle-vone {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes twinkle-vone {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 50;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 306, ../../sass/components/main.scss */
+.to-top-image {
+  height: 60px;
+  width: 50px;
+  margin: auto;
+}
+
+/* line 313, ../../sass/components/main.scss */
+.final-words:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  text-shadow: 0 0 4px #FFFFFF;
+  color: rgba(255, 255, 255, 0);
+}
+
+/* line 321, ../../sass/components/main.scss */
+.final-words {
+  text-shadow: 0 0 0px #FFFFFF;
+  color: rgba(255, 255, 255, 0);
+  transition: all 3s ease-in;
+}
+
+@media only screen and (min-width: 25em) {
+  /* line 331, ../../sass/components/main.scss */
+  h1:hover {
+    text-shadow: 0 0 8px #FFFFFF;
+    transition: all 3s ease;
+  }
+
+  /* line 336, ../../sass/components/main.scss */
+  h1 {
+    transition: all 2s ease-out;
+  }
+
+  /* line 340, ../../sass/components/main.scss */
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    right: 20px;
+  }
+
+  /* line 346, ../../sass/components/main.scss */
+  .title {
+    font-size: 8em;
+  }
+
+  /* line 350, ../../sass/components/main.scss */
+  .drop-1 {
+    height: 50px;
+    width: 50px;
+    left: 30px;
+    -webkit-animation: drop-again 7s ease-in infinite;
+    animation: drop-again 7s ease-in infinite;
+  }
+
+  /* line 358, ../../sass/components/main.scss */
+  .drop-2 {
+    height: 50px;
+    width: 50px;
+    left: 200px;
+    -webkit-animation: drop-again 9s ease-in infinite;
+    animation: drop-again 9s ease-in infinite;
+  }
+
+  /* line 366, ../../sass/components/main.scss */
+  .drop-3 {
+    height: 50px;
+    width: 50px;
+    left: 380px;
+    top: 30px;
+    -webkit-animation: drop-again 4s ease-in infinite;
+    animation: drop-again 4s ease-in infinite;
+  }
+
+  @-webkit-keyframes drop-again {
+    /* tablet */
+    0% {
+      -webkit-transform: translateY(0px);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      -webkit-transform: translateY(200px);
+      opacity: 0;
+    }
+  }
+  @keyframes drop-again {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+  }
+  /* line 387, ../../sass/components/main.scss */
+  .two-illustration {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 38em) {
+  /* line 396, ../../sass/components/main.scss */
+  .title {
+    font-size: 12em;
+  }
+
+  /* line 400, ../../sass/components/main.scss */
+  .drop-1 {
+    height: 60px;
+    width: 50px;
+    left: 50px;
+  }
+
+  /* line 406, ../../sass/components/main.scss */
+  .drop-2 {
+    height: 60px;
+    width: 50px;
+    left: 350px;
+  }
+
+  /* line 412, ../../sass/components/main.scss */
+  .drop-3 {
+    height: 60px;
+    width: 50px;
+    left: 650px;
+    top: 50px;
+  }
+
+  @-webkit-keyframes drop-again {
+    0% {
+      -webkit-transform: translateY(0px);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      -webkit-transform: translateY(450px);
+      opacity: 0;
+    }
+  }
+  @keyframes drop-again {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(450px);
+      opacity: 0;
+    }
+  }
+  /* line 431, ../../sass/components/main.scss */
+  .two-illustration {
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 60em) {
+  /* line 440, ../../sass/components/main.scss */
+  .title {
+    font-size: 13em;
+  }
+
+  /* line 444, ../../sass/components/main.scss */
+  .drop-1 {
+    height: 80px;
+    width: 50px;
+    left: 100px;
+  }
+
+  /* line 450, ../../sass/components/main.scss */
+  .drop-2 {
+    height: 80px;
+    width: 50px;
+    left: 600px;
+  }
+
+  /* line 456, ../../sass/components/main.scss */
+  .drop-3 {
+    height: 80px;
+    width: 50px;
+    left: 1200px;
+    top: 50px;
+  }
+
+  @-webkit-keyframes drop-again {
+    0% {
+      -webkit-transform: translateY(0px);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      -webkit-transform: translateY(700px);
+      opacity: 0;
+    }
+  }
+  @keyframes drop-again {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(700px);
+      opacity: 0;
+    }
+  }
+  /* line 475, ../../sass/components/main.scss */
+  .two-illustration {
+    width: 800px;
+  }
+}

@@ -271,8 +271,23 @@ h1 {
 	fill:#FFFFFF;}
 
  #star-4 {
+	-webkit-animation: twinkle-vone 4s ease alternate infinite;
+	animation: twinkle-vone 4s ease alternate infinite;
+}
+
+ #star-3 {
 	-webkit-animation: twinkle-vone 5s ease alternate infinite;
 	animation: twinkle-vone 5s ease alternate infinite;
+}
+
+ #star-2 {
+	-webkit-animation: twinkle-vone 6s ease alternate infinite;
+	animation: twinkle-vone 6s ease alternate infinite;
+}
+
+ #star-1 {
+	-webkit-animation: twinkle-vone 3s ease alternate infinite;
+	animation: twinkle-vone 3s ease alternate infinite;
 }
 
 @-webkit-keyframes twinkle-vone {
@@ -284,37 +299,6 @@ h1 {
 @keyframes twinkle-vone {
 	0% { opacity: 100; }
 	50% { opacity: 50; }
-	100% { opacity: 0; }
-}
-
- #star-3 {
-	-webkit-animation: twinkle-vtwo 10s ease alternate infinite;
-	animation: twinkle-vtwo 10s ease alternate infinite;
-}
-
-.js-panel-expand #star-2 {
-	-webkit-animation: twinkle-vone 7s ease alternate infinite;
-	animation: twinkle-vone 7s ease alternate infinite;
-}
-
-.js-panel-expand #star-1 {
-	-webkit-animation: twinkle-vtwo 5s ease alternate infinite;
-	animation: twinkle-vtwo 5s ease alternate infinite;
-}
-
-@-webkit-keyframes twinkle-vtwo {
-	0% { opacity: 100; }
-	30% { opacity: 80; }
-	50% { opacity: 50; }
-	80% { opacity: 30; }
-	100% { opacity: 0; }
-}
-
-@keyframes twinkle-vtwo {
-	0% { opacity: 100; }
-	30% { opacity: 80; }
-	50% { opacity: 50; }
-	80% { opacity: 30; }
 	100% { opacity: 0; }
 }
 
