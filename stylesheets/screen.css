@@ -2,6 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "http://fonts.googleapis.com/css?family=Amatic+SC:700";
+@import "https://fonts.googleapis.com/css?family=Kanit:900i|Raleway:500";
 /* line 5, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,6 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* Variables */
 @-moz-viewport {
   width: device-width;
   scale: 1;
@@ -132,10 +135,16 @@ a:focus {
 /* line 47, ../sass/components/main.scss */
 body {
   margin: 0;
+  padding: 0;
   background-color: #1a1a1a;
 }
 
 /* line 53, ../sass/components/main.scss */
+.main-body {
+  margin: 35px;
+}
+
+/* line 58, ../sass/components/main.scss */
 .crystal-background {
   margin: 0 auto;
   padding-bottom: 10px;
@@ -143,18 +152,18 @@ body {
   overflow: hidden;
 }
 
-/* line 60, ../sass/components/main.scss */
+/* line 65, ../sass/components/main.scss */
 .crystals {
   position: relative;
   z-index: 1000;
 }
 
-/* line 65, ../sass/components/main.scss */
+/* line 70, ../sass/components/main.scss */
 .nav {
   overflow: hidden;
 }
 
-/* line 69, ../sass/components/main.scss */
+/* line 74, ../sass/components/main.scss */
 a {
   list-style-type: none;
   text-decoration: none;
@@ -162,13 +171,13 @@ a {
   cursor: pointer;
 }
 
-/* line 76, ../sass/components/main.scss */
+/* line 81, ../sass/components/main.scss */
 li {
   text-align: center;
   list-style-type: none;
 }
 
-/* line 81, ../sass/components/main.scss */
+/* line 86, ../sass/components/main.scss */
 .hamburger {
   position: absolute;
   margin: 0;
@@ -179,18 +188,18 @@ li {
   cursor: pointer;
 }
 
-/* line 91, ../sass/components/main.scss */
+/* line 96, ../sass/components/main.scss */
 .js-panel-down {
   max-height: 3.5em;
 }
 
-/* line 95, ../sass/components/main.scss */
+/* line 100, ../sass/components/main.scss */
 .nav-menu {
   padding: .25rem;
   width: 4em;
 }
 
-/* line 100, ../sass/components/main.scss */
+/* line 105, ../sass/components/main.scss */
 .title {
   margin: 0;
   padding: 0;
@@ -205,7 +214,7 @@ li {
 }
 
 /*  header */
-/* line 114, ../sass/components/main.scss */
+/* line 119, ../sass/components/main.scss */
 h1:hover {
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -214,12 +223,12 @@ h1:hover {
   transition: all 3s ease;
 }
 
-/* line 122, ../sass/components/main.scss */
+/* line 127, ../sass/components/main.scss */
 h1 {
   transition: all 2s ease-out;
 }
 
-/* line 126, ../sass/components/main.scss */
+/* line 131, ../sass/components/main.scss */
 .drop-1 {
   /* mobile */
   position: absolute;
@@ -232,7 +241,7 @@ h1 {
   animation: drop-again 10s ease-in infinite;
 }
 
-/* line 137, ../sass/components/main.scss */
+/* line 142, ../sass/components/main.scss */
 .drop-2 {
   position: absolute;
   margin: 0;
@@ -244,7 +253,7 @@ h1 {
   animation: drop-again 8s ease-in infinite;
 }
 
-/* line 148, ../sass/components/main.scss */
+/* line 153, ../sass/components/main.scss */
 .drop-3 {
   position: absolute;
   margin: 0;
@@ -283,19 +292,13 @@ h1 {
     opacity: 0;
   }
 }
-/* line 172, ../sass/components/main.scss */
+/* line 177, ../sass/components/main.scss */
 .text {
+  font-size: 18px;
   color: #e6e6e6;
 }
 
-/* line 176, ../sass/components/main.scss */
-.sections {
-  text-align: center;
-  width: 220px;
-  height: 70px;
-}
-
-/* line 182, ../sass/components/main.scss */
+/* line 184, ../sass/components/main.scss */
 .panel {
   padding: 0;
   margin: 0;
@@ -304,120 +307,57 @@ h1 {
   transition: all 280ms ease-out;
 }
 
-/* line 190, ../sass/components/main.scss */
-.story {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 280ms ease-out;
-}
-
-/* line 198, ../sass/components/main.scss */
-.story-2 {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 280ms ease-out;
-}
-
-/* line 206, ../sass/components/main.scss */
-.story-3 {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 280ms ease-out;
-}
-
-/* line 214, ../sass/components/main.scss */
-.story-4 {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 280ms ease-out;
-}
-
-/* line 222, ../sass/components/main.scss */
-.story-5 {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 280ms ease-out;
-}
-
-/* line 230, ../sass/components/main.scss */
-.story-6 {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 280ms ease-out;
-}
-
-/* line 238, ../sass/components/main.scss */
-.story-7 {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 280ms ease-out;
-}
-
-/* line 248, ../sass/components/main.scss */
+/* line 192, ../sass/components/main.scss */
 .two-illustration {
   width: 200px;
   display: block;
   margin: 0 auto;
 }
 
-/* line 255, ../sass/components/main.scss */
+/* line 199, ../sass/components/main.scss */
 .st0 {
   fill: #027F80;
 }
 
-/* line 258, ../sass/components/main.scss */
+/* line 202, ../sass/components/main.scss */
 .st1 {
   fill: #5AC6D1;
 }
 
-/* line 262, ../sass/components/main.scss */
+/* line 206, ../sass/components/main.scss */
 .st2 {
   fill: #064040;
 }
 
-/* line 266, ../sass/components/main.scss */
+/* line 210, ../sass/components/main.scss */
 .st3 {
   fill: #000;
 }
 
-/* line 270, ../sass/components/main.scss */
+/* line 214, ../sass/components/main.scss */
 .st4 {
   fill: #FFFFFF;
 }
 
-/* line 273, ../sass/components/main.scss */
+/* line 217, ../sass/components/main.scss */
 #star-4 {
   -webkit-animation: twinkle-vone 4s ease alternate infinite;
   animation: twinkle-vone 4s ease alternate infinite;
 }
 
-/* line 278, ../sass/components/main.scss */
+/* line 222, ../sass/components/main.scss */
 #star-3 {
   -webkit-animation: twinkle-vone 5s ease alternate infinite;
   animation: twinkle-vone 5s ease alternate infinite;
 }
 
-/* line 283, ../sass/components/main.scss */
+/* line 227, ../sass/components/main.scss */
 #star-2 {
   -webkit-animation: twinkle-vone 6s ease alternate infinite;
   animation: twinkle-vone 6s ease alternate infinite;
 }
 
-/* line 288, ../sass/components/main.scss */
+/* line 232, ../sass/components/main.scss */
 #star-1 {
   -webkit-animation: twinkle-vone 3s ease alternate infinite;
   animation: twinkle-vone 3s ease alternate infinite;
@@ -445,14 +385,14 @@ h1 {
     opacity: 0;
   }
 }
-/* line 306, ../sass/components/main.scss */
+/* line 250, ../sass/components/main.scss */
 .to-top-image {
   height: 60px;
   width: 50px;
   margin: auto;
 }
 
-/* line 313, ../sass/components/main.scss */
+/* line 257, ../sass/components/main.scss */
 .final-words:hover {
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -460,7 +400,7 @@ h1 {
   color: rgba(255, 255, 255, 0);
 }
 
-/* line 321, ../sass/components/main.scss */
+/* line 265, ../sass/components/main.scss */
 .final-words {
   text-shadow: 0 0 0px #FFFFFF;
   color: rgba(255, 255, 255, 0);
@@ -468,30 +408,30 @@ h1 {
 }
 
 @media only screen and (min-width: 25em) {
-  /* line 331, ../sass/components/main.scss */
+  /* line 275, ../sass/components/main.scss */
   h1:hover {
     text-shadow: 0 0 8px #FFFFFF;
     transition: all 3s ease;
   }
 
-  /* line 336, ../sass/components/main.scss */
+  /* line 280, ../sass/components/main.scss */
   h1 {
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
   }
 
-  /* line 340, ../sass/components/main.scss */
+  /* line 284, ../sass/components/main.scss */
   .hamburger {
     height: 50px;
     width: 50px;
     right: 20px;
   }
 
-  /* line 346, ../sass/components/main.scss */
+  /* line 290, ../sass/components/main.scss */
   .title {
     font-size: 8em;
   }
 
-  /* line 350, ../sass/components/main.scss */
+  /* line 294, ../sass/components/main.scss */
   .drop-1 {
     height: 50px;
     width: 50px;
@@ -500,7 +440,7 @@ h1 {
     animation: drop-again 7s ease-in infinite;
   }
 
-  /* line 358, ../sass/components/main.scss */
+  /* line 302, ../sass/components/main.scss */
   .drop-2 {
     height: 50px;
     width: 50px;
@@ -509,7 +449,7 @@ h1 {
     animation: drop-again 9s ease-in infinite;
   }
 
-  /* line 366, ../sass/components/main.scss */
+  /* line 310, ../sass/components/main.scss */
   .drop-3 {
     height: 50px;
     width: 50px;
@@ -546,32 +486,32 @@ h1 {
       opacity: 0;
     }
   }
-  /* line 387, ../sass/components/main.scss */
+  /* line 331, ../sass/components/main.scss */
   .two-illustration {
     width: 300px;
   }
 }
 @media only screen and (min-width: 38em) {
-  /* line 396, ../sass/components/main.scss */
+  /* line 340, ../sass/components/main.scss */
   .title {
     font-size: 12em;
   }
 
-  /* line 400, ../sass/components/main.scss */
+  /* line 344, ../sass/components/main.scss */
   .drop-1 {
     height: 60px;
     width: 50px;
     left: 50px;
   }
 
-  /* line 406, ../sass/components/main.scss */
+  /* line 350, ../sass/components/main.scss */
   .drop-2 {
     height: 60px;
     width: 50px;
     left: 350px;
   }
 
-  /* line 412, ../sass/components/main.scss */
+  /* line 356, ../sass/components/main.scss */
   .drop-3 {
     height: 60px;
     width: 50px;
@@ -605,32 +545,32 @@ h1 {
       opacity: 0;
     }
   }
-  /* line 431, ../sass/components/main.scss */
+  /* line 375, ../sass/components/main.scss */
   .two-illustration {
     width: 550px;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 440, ../sass/components/main.scss */
+  /* line 384, ../sass/components/main.scss */
   .title {
     font-size: 13em;
   }
 
-  /* line 444, ../sass/components/main.scss */
+  /* line 388, ../sass/components/main.scss */
   .drop-1 {
     height: 80px;
     width: 50px;
     left: 100px;
   }
 
-  /* line 450, ../sass/components/main.scss */
+  /* line 394, ../sass/components/main.scss */
   .drop-2 {
     height: 80px;
     width: 50px;
     left: 600px;
   }
 
-  /* line 456, ../sass/components/main.scss */
+  /* line 400, ../sass/components/main.scss */
   .drop-3 {
     height: 80px;
     width: 50px;
@@ -664,7 +604,7 @@ h1 {
       opacity: 0;
     }
   }
-  /* line 475, ../sass/components/main.scss */
+  /* line 419, ../sass/components/main.scss */
   .two-illustration {
     width: 800px;
   }
@@ -1558,6 +1498,11 @@ sub {
 }
 
 /* line 214, ../sass/components/type.scss */
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: 'Amatic SC', cursive;
+}
+
+/* line 218, ../sass/components/type.scss */
+h2, h3, h4, h5, h6 {
+  font-family: 'Kanit', sans-serif;
 }

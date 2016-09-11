@@ -2,11 +2,15 @@
 var $navExpand = $('.nav-expand');
 var $panel = $('.panel');
 
+console.log("I got here!")
+
 	$navExpand.on('click', function (){
 
 	$panel.toggleClass('js-panel-expand');
 
 });
+
+
 
 
 $('.smooth-scroll').localScroll();
