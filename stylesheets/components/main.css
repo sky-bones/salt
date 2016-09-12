@@ -418,28 +418,33 @@ h1 {
   .two-illustration {
     width: 300px;
   }
+
+  /* line 335, ../../sass/components/main.scss */
+  .main-body {
+    margin: 65px;
+  }
 }
 @media only screen and (min-width: 38em) {
-  /* line 340, ../../sass/components/main.scss */
+  /* line 344, ../../sass/components/main.scss */
   .title {
     font-size: 12em;
   }
 
-  /* line 344, ../../sass/components/main.scss */
+  /* line 348, ../../sass/components/main.scss */
   .drop-1 {
     height: 60px;
     width: 50px;
     left: 50px;
   }
 
-  /* line 350, ../../sass/components/main.scss */
+  /* line 354, ../../sass/components/main.scss */
   .drop-2 {
     height: 60px;
     width: 50px;
     left: 350px;
   }
 
-  /* line 356, ../../sass/components/main.scss */
+  /* line 360, ../../sass/components/main.scss */
   .drop-3 {
     height: 60px;
     width: 50px;
@@ -473,32 +478,37 @@ h1 {
       opacity: 0;
     }
   }
-  /* line 375, ../../sass/components/main.scss */
+  /* line 379, ../../sass/components/main.scss */
   .two-illustration {
     width: 550px;
   }
+
+  /* line 383, ../../sass/components/main.scss */
+  .main-body {
+    margin: 85px;
+  }
 }
 @media only screen and (min-width: 60em) {
-  /* line 384, ../../sass/components/main.scss */
+  /* line 392, ../../sass/components/main.scss */
   .title {
     font-size: 13em;
   }
 
-  /* line 388, ../../sass/components/main.scss */
+  /* line 396, ../../sass/components/main.scss */
   .drop-1 {
     height: 80px;
     width: 50px;
     left: 100px;
   }
 
-  /* line 394, ../../sass/components/main.scss */
+  /* line 402, ../../sass/components/main.scss */
   .drop-2 {
     height: 80px;
     width: 50px;
     left: 600px;
   }
 
-  /* line 400, ../../sass/components/main.scss */
+  /* line 408, ../../sass/components/main.scss */
   .drop-3 {
     height: 80px;
     width: 50px;
@@ -532,8 +542,13 @@ h1 {
       opacity: 0;
     }
   }
-  /* line 419, ../../sass/components/main.scss */
+  /* line 427, ../../sass/components/main.scss */
   .two-illustration {
     width: 800px;
+  }
+
+  /* line 431, ../../sass/components/main.scss */
+  .main-body {
+    margin: 200px 800px 200px 800px;
   }
 }
