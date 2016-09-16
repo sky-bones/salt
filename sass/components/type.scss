@@ -211,10 +211,8 @@ sub {
   padding-right: 0.3750rem;
 }
 
-h1 {
-  font-family: 'Amatic SC', cursive;
+h1, h2, h3, h4, h5, h6, {
+  font: normal 100%/1.5 "Kanit",sans-serif;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Kanit', sans-serif;
-}
+

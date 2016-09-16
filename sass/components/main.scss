@@ -47,11 +47,12 @@ a:focus {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #1a1a1a;
+	background-color: #F8B0C8;
+	/* background-color: #1a1a1a; */
 }
 
 .main-body {
-	margin: 35px;
+	margin: 30px;
 }
 
 
@@ -68,7 +69,7 @@ body {
 }
 
 .nav {
-overflow: hidden;
+	overflow: hidden;
 }
 
 a {
@@ -128,6 +129,21 @@ h1 {
 	transition: all 2s ease-out;
 }
 
+.quote {
+	font-size: 1.5em;
+	letter-spacing: 3px;
+	color: #FFF000;
+	padding: 0;
+	margin: 0;
+}
+
+.quote-back {
+	background-color: #ED1584;
+	padding: 10px;
+	margin-bottom: 24px;
+
+}
+
 .drop-1 { /* mobile */
 	position: absolute;
 	margin:0;
@@ -176,9 +192,9 @@ h1 {
 
 .text {
 	font-size: 18px;
-	color: #e6e6e6;
+	color: #CC1A6D;
+	/* color: #e6e6e6;*/
 }
-
 
 
 .panel {
@@ -269,7 +285,6 @@ h1 {
 }
 
 
-
 @media only screen and (min-width: 25em) {
 
 h1:hover {
@@ -288,7 +303,7 @@ h1 {
 }
 
 	.title {
-		font-size: 8em;
+		font-size: 6em;
 }
 
 	.drop-1 {
@@ -333,7 +348,7 @@ h1 {
 }
 
 .main-body {
-	margin: 65px;
+	margin: 55px;
 }
 
 }
@@ -342,7 +357,8 @@ h1 {
 @media only screen and (min-width: 38em) {
 
 	.title {
-		font-size: 12em;
+		font-size: 11em;
+		left: calc(50% - 160px);
 }
 
 	.drop-1 {
@@ -391,6 +407,7 @@ h1 {
 
 	.title {
 		font-size: 13em;
+		left: calc(50% - 190px);
 }
 
 	.drop-1 {
@@ -424,13 +441,25 @@ h1 {
 	100% {transform: translateY(700px); opacity: 0; }
 }
 
-		.two-illustration {
+	.two-illustration {
 		width: 800px;
 }
 
-.main-body {
-	margin: 200px 800px 200px 800px;
+	.main-body {
+		margin: 100px 100px 100px 100px;
 }
+
+	.wide-screen {
+		margin: 0 160px 1.5em 160px;
+}
+
+	.quote {
+		font-size: 3em;
+	}
+
+	.quote-back {
+		padding: 20px;
+	}
 
 }
 
